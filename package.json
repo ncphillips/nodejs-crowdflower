@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/EasonWang90/nodejs-crowdflower/issues"
   },
-  "homepage": "https://github.com/EasonWang90/nodejs-crowdflower"
+  "homepage": "https://github.com/EasonWang90/nodejs-crowdflower",
+  "dependencies":{
+    "async": "0.9.0"
+  }
 }
