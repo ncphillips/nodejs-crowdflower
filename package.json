@@ -1,25 +1,28 @@
 {
-  "name": "nodejs-crowdflower",
-  "version": "0.0.0",
-  "description": "provide API interact with crowdflower",
-  "main": "./lib/crowdflower.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/EasonWang90/nodejs-crowdflower.git"
-  },
-  "keywords": [
-    "crowdflower"
-  ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EasonWang90/nodejs-crowdflower/issues"
-  },
-  "homepage": "https://github.com/EasonWang90/nodejs-crowdflower",
-  "dependencies":{
-    "async": "0.9.0"
-  }
+    "name":  "nodejs-crowdflower",
+    "version":  "0.0.0",
+    "description":  "provide  API  interact  with  crowdflower",
+    "main":  "./lib/crowdflower.js",
+    "scripts":  {
+        "test":  "echo  \"Error:  no  test  specified\"  &&  exit  1"
+    },
+    "repository":  {
+        "type":  "git",
+        "url":  "https://github.com/EasonWang90/nodejs-crowdflower.git"
+    },
+    "keywords":  [
+        "crowdflower"
+    ],
+    "author":  "",
+    "license":  "ISC",
+    "bugs":  {
+        "url":  "https://github.com/EasonWang90/nodejs-crowdflower/issues"
+    },
+    "homepage":  "https://github.com/EasonWang90/nodejs-crowdflower",
+    "dependencies":{
+        "async": "0.9.0",
+        "q": "1"
+
+
+    }
 }
