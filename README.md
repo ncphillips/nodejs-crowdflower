@@ -1,25 +1,52 @@
 Nodejs-Crowdflower
 =========
-A toolkit for interacting with CrowdFlower via the REST API.
+A toolkit for interacting with CrowdFlower via the REST API. Uses Q promises to
+fetch and work with objects.
 
 Example Usage
 -------------
 
-Specifiy which part of api need to use:
-	
-	Crowdflower.factory("job", Crowdflower_key)
-	
+### Connect to Crowdflower
+Create a connection to Crowdflower
+
+	var cf = new Crowdflower(myApiKey);
+
+Retrieve your account information.
+
+  cf.accountInfo();
+
+### Jobs
+Get an array of all your jobs from Crowdflower:
+
+  cf.fetchAllJobs();
+
+Get a specific job from Crowdflower:
+
+  cf.fetchJob(000001);
+
 Create a new job:
 
-	newjob.createjob(jsonObject, callback)
+  var jobTemplate = {
+    "title": "My Big Job"
+  };
+  cf.createJob(jobTemplate);
 
-Copy an existing job into a new one:
-	
-	newjob.copyjob(jobID, allUnit, gold, callback)
-	
-Upload data with data feed:
+Updating a job:
 
-	newjob.uploadDataFeed(jobID, url, callback) // jobID ( optional)
+  cf.fetchJob(000001).then(
+    function(job){
+      job.title = "My first job's new title."
+      job.update();
+    },
+  );
+
+Deleting a job:
+
+  cf.fetchJob(000001).then(
+    function(job){
+      job.delete();
+    }
+  );
 
 
 
