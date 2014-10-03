@@ -1,7 +1,7 @@
 {
     "name":  "nodejs-crowdflower",
     "version":  "0.0.0",
-    "description":  "provide  API  interact  with  crowdflower",
+    "description":  "An library for interacting with the Crowdflower API.",
     "main":  "./lib/crowdflower.js",
     "scripts":  {
         "test":  "echo  \"Error:  no  test  specified\"  &&  exit  1"
@@ -20,9 +20,6 @@
     },
     "homepage":  "https://github.com/EasonWang90/nodejs-crowdflower",
     "dependencies":{
-        "async": "0.9.0",
         "q": "1"
-
-
     }
 }
