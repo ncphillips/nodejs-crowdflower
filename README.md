@@ -13,40 +13,40 @@ Create a connection to Crowdflower
 
 Retrieve your account information.
 
-  cf.accountInfo();
+	cf.accountInfo();
 
 ### Jobs
 Get an array of all your jobs from Crowdflower:
 
-  cf.fetchAllJobs();
+    cf.fetchAllJobs();
 
 Get a specific job from Crowdflower:
 
-  cf.fetchJob(000001);
+    cf.fetchJob(000001);
 
 Create a new job:
 
-  var jobTemplate = {
-    "title": "My Big Job"
-  };
-  cf.createJob(jobTemplate);
+    var jobTemplate = {
+      "title": "My Big Job"
+    };
+    cf.createJob(jobTemplate);
 
 Updating a job:
 
-  cf.fetchJob(000001).then(
-    function(job){
-      job.title = "My first job's new title."
-      job.update();
-    },
-  );
+    cf.fetchJob(000001).then(
+      function(job){
+        job.title = "My first job's new title."
+        job.update();
+      },
+    );
 
 Deleting a job:
 
-  cf.fetchJob(000001).then(
-    function(job){
-      job.delete();
-    }
-  );
+    cf.fetchJob(000001).then(
+      function(job){
+        job.delete();
+      }
+    );
 
 
 
