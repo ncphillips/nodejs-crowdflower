@@ -20,6 +20,6 @@
     },
     "homepage":  "https://github.com/EasonWang90/nodejs-crowdflower",
     "dependencies":{
-        "q": "1"
+        "q": "1.0.1"
     }
 }
